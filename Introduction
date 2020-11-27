@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>DeserIn</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-8"></div>
+            <div class="col-md-4">
+            <label class="header">Cover Photo:</label>
+            <span class="material-icons">
+                collections
+                </span>
+            <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <label class="header">Profile Photo:</label>
+            <span class="material-icons">
+                perm_identity
+                </span>
+            <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+        </div>
+        </div>
+    </div>
+
+    <!------------- introduction----->
+    <div class="container py-5">
+        <div class="bg-light px-5">
+            <div class="row">
+            </div>
+            <div class="row pt-2">
+                <div class="col-md-11 col-10"></div>
+                <span type="button" class="col-md-1 col-2 pt-5 material-icons" id="backToMain">
+                    close
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="pl-1 fontHeading" style="text-align: center;">Introduction</h3>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <label for="input" class="col-sm-2 col-form-label" style="font-size:larger;">Full Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introFullName">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label" style="font-size:larger;">Tagline</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introTagLine">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label" style="font-size:larger;">Summary</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introSummary">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="input" style="font-size:larger;">Job Position</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" id="introHome" value="home">
+                    <label for="input" style="font-size: medium;">Home</label><br>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" id="introWork" value="work">
+                    <label for="input" style="font-size: medium;">Work</label><br>
+                </div>
+            </div>
+            <div class="form-group row pt-2">
+                <label for="input" class="col-sm-2 col-form-label" style="font-size:larger;">Location</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introLoaction">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label" style="font-size:larger;">Mobile No</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introMobileNo">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label" style="font-size:larger;">Date of Birth</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="introDateOfBirth">
+                </div>
+            </div>
+            <div class="pt-2 pb-5">
+                <button type="submit" class="btn btn-primary" id="submitIntro">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

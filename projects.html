@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <title>DeserveIn</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: black;">
+        <a class="navbar-brand text-white px-2" style="font-weight: bold;" href="index.html">
+            <img src="images/logo.png" width="30" height="30" alt="" loading="lazy"> DeserveIn
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+    </nav>
+
+<!------------- Project & Memberships---->
+<div class="container py-5 " id="createNewTask">
+    <div class="bg-light px-5">
+        <div class="row pt-2">
+            <div class="col-md-11 col-10"></div>
+            <span type="button" class="col-md-1 col-2 pt-5 material-icons" id="backToMain">
+            close
+        </span>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Projects</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titleProject" required>
+                <div class="invalid-feedback">
+                    Please provide a Title
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="input">Start Date</label>
+                <input class="form-control" type="date" value="" id="startdateProject" required>
+                <div class="invalid-tooltip">
+                    Please Select Starting Date 
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="input">End Date</label>
+                <input class="form-control" type="date" value="" id="endDateProject" required>
+                <div class="invalid-tooltip">
+                    Please Select End Date 
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 pb-3"></div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkProject">
+            <label class="form-check-label" for="defaultCheck1" style="text-align: left;">
+                  Are You Working on any Project.If 'YES' click the checkbox and Provide the Url
+            </label>
+          </div>
+          <div class="pt-3 pb-3"></div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="projectUrl" required>
+                <div class="invalid-feedback">
+                Enter the Url of Project
+                </div>
+            </div>
+        </div> 
+        <div class="pt-2 pb-5"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Membership</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipName" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Position</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipPosition" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Organisation</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipOrganisation" required>
+                <div class="invalid-feedback">
+                 Provide the Organisation Name
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 pb-3"></div>    
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkMembership">
+            <label class="form-check-label, text" for="defaultCheck1">
+                  Are You Working on any Project.If 'YES' click the checkbox and provide the Url
+            </label>
+          </div>
+          <div class="pt-3 pb-3"></div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipUrl" required>
+                <div class="invalid-feedback">
+                 Provide the Url of Project
+                </div>
+            </div>
+        </div> 
+        <div class="pt-2 pb-5">
+            <button type="submit" class="btn btn-primary" id="submitProjectMembership">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

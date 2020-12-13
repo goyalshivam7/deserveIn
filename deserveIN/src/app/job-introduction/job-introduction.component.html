@@ -1,0 +1,58 @@
+<div class="d-flex py-2 bd-highlight bg-warning mb-5">
+    <h3 id="text">Job Introduction</h3>
+</div>
+<div class="container">
+    <form>
+        <div class="form-row">
+            <div class="col-md-7 mb-2">
+                <label for="validationDefault01" id="size">Current Job Title</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Current Title"
+                    aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div><br>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <label for="validationDefault01" id="size">Location</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Location"
+                    aria-describedby="inputGroupPrepend2" required>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationDefault02" id="size">State</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="State"
+                    aria-describedby="inputGroupPrepend2" required>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationDefault02" id="size">Country</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Country"
+                    aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div><br>
+        <h5>Begin Type-</h5><br>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <label for="validationDefaultUsername" id="size">Immediate Date</label>
+                <form action="/action_page.php">
+                    <input type="date" id="hours" name="hours" class="form-control">
+                </form>
+            </div>
+            <div class="col-md-3 mb-2">
+                <label for="validationDefault03" id="size">Flexible Hours</label>
+                <select class="form-control">
+                    <option value="#">Select Hours</option><br>
+                    <option value="9AM-12PM">9AM-12PM</option><br>
+                    <option value="12PM-3PM">12PM-3PM</option><br>
+                    <option value="3PM-6PM">3PM-6PM</option><br>
+                    <option value="6PM-9PM">6PM-9PM</option><br>
+                </select>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-md-7"></div>
+            <div class="col-md-2">
+                <div class="px-2 py-5">
+                    <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

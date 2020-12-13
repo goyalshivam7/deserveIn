@@ -1,0 +1,114 @@
+<div class="d-flex py-2 bd-highlight bg-warning mb-5">
+    <h3 id="text">Project and Membership</h3>
+</div>
+<div class="container py-5 ">
+    <div class="px-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Projects</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titleProject" required>
+                <div class="invalid-feedback">
+                    Please provide a Title
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="input">Start Date</label>
+                <input class="form-control" type="date" value="" id="startdateProject" required>
+                <div class="invalid-tooltip">
+                    Please Select Starting Date 
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="input">End Date</label>
+                <input class="form-control" type="date" value="" id="endDateProject" required>
+                <div class="invalid-tooltip">
+                    Please Select End Date 
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 pb-3"></div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkProject">
+            <label class="form-check-label" for="defaultCheck1" style="text-align: left;">
+                  Are You Working on any Project.If 'YES' click the checkbox and Provide the Url
+            </label>
+          </div>
+          <div class="pt-3 pb-3"></div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="projectUrl" required>
+                <div class="invalid-feedback">
+                Enter the Url of Project
+                </div>
+            </div>
+        </div> 
+        <div class="pt-2 pb-5"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Membership</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipName" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Position</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipPosition" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Organisation</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipOrganisation" required>
+                <div class="invalid-feedback">
+                 Provide the Organisation Name
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 pb-3"></div>    
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkMembership">
+            <label class="form-check-label, text" for="defaultCheck1">
+                 Do you have Membership. If 'YES' provide the URL
+            </label>
+          </div>
+          <div class="pt-3 pb-3"></div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="membershipUrl" required>
+                <div class="invalid-feedback">
+                 Provide the Url of Project
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2 col-3">
+                <div class="pt-2 pb-5">
+                    <button type="submit" class="btn btn-primary" id="submitIntro">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-8 col-6"></div>
+            <div class="col-md-2 col-3">
+                <div class="px-2">
+                    <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

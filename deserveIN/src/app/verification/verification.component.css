@@ -1,0 +1,19 @@
+#intro {
+    width: 100%;
+    height: 80px;
+    background-color: lightskyblue;
+}
+
+#text {
+    margin-left: 30px;
+    font-size: 40px;
+}
+
+#size {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3,h2{
+    text-align: center;
+}

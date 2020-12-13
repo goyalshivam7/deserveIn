@@ -1,0 +1,76 @@
+<div class="d-flex py-2 bd-highlight bg-warning mb-5">
+    <h3 id="text">Rewards</h3>
+</div>
+<div class="container py-5 ">
+    <div class="px-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="pl-1 fontHeading">Rewards</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titleRewards" required>
+                <div class="invalid-feedback">
+                    Please provide a Title
+                </div>
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Issued Organisation</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="issuedOrganisationRewards" required>
+                <div class="invalid-feedback">
+                    Please provide Organisation Name
+                </div>
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Issued Date</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="date" value="" id="issuedDateRewards" required>
+                <div class="invalid-feedback">
+                    Please provide Issue Date
+                </div>
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="descriptionRewards" required>
+                <div class="invalid-feedback">
+                    Please provide Organisation Name
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 pb-5"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Languages Known</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Languages</label>
+            <div class="col-sm-10">
+                <textarea  type="text" class="form-control" id="languages" rows="1" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-3">
+                <div class="pt-2 pb-5">
+                    <button type="submit" class="btn btn-primary" id="submitIntro">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-8 col-6"></div>
+            <div class="col-md-2 col-3">
+                <div class="px-2">
+                    <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

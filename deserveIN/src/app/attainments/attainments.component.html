@@ -1,0 +1,131 @@
+<div class="d-flex py-2 bd-highlight bg-warning mb-5">
+    <h3 id="text">Attainments</h3>
+</div>
+<div class="container py-5 ">
+    <div class="bg-light px-5">
+        <div class="row pt-2">
+            <div class="col-md-11 col-10"></div>
+            <span type="button" class="col-md-1 col-2 pt-5 material-icons" id="backToMain">
+            close
+        </span>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Publications</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titleAttainments" required>
+                <div class="invalid-feedback">
+                    Please provide a Title
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Publisher</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="publisherAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Publisher Name
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Author</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="aurthorAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Aurthor Name
+                </div>
+            </div>
+        </div>    
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Date</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="date" value="" id="dateAttainments" required>
+                <div class="invalid-tooltip">
+                    Please Enter the Date
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Url</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="urlAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Url
+                </div>
+            </div>
+        </div> 
+        <div class="pt-2 pb-5"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Patent Rights</h3>
+                <hr class="w-75 ml-0">
+            </div>
+        </div>
+        <div class="form-group row pt-2">
+            <label for="input" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="titlePatentAttainments" required>
+                <div class="invalid-feedback">
+                    Please provide a Title
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Patent Office</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="patentOfficeAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Patentn Office
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Patent Number</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="patentNumberAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Patentn Number
+                </div>
+            </div>
+        </div>    
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Duration</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="date" value="" id="durationAttainments" required>
+                <div class="invalid-tooltip">
+                    Please Enter the Duration
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Inventor</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inventorAttainments" required>
+                <div class="invalid-feedback">
+                 Provide the Inventor Name
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2 col-3">
+                <div class="pt-2 pb-5">
+                    <button type="submit" class="btn btn-primary" id="submitIntro">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-8 col-6"></div>
+            <div class="col-md-2 col-3">
+                <div class="px-2">
+                    <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

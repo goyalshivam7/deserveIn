@@ -15,6 +15,7 @@ import { RewardsComponent } from './rewards/rewards.component';
 import { RatificationComponent } from './ratification/ratification.component';
 import { GigProfileComponent } from './gig-profile/gig-profile.component';
 import { GigExperienceComponent } from './gig-experience/gig-experience.component';
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   declarations: [
@@ -30,13 +31,13 @@ import { GigExperienceComponent } from './gig-experience/gig-experience.componen
     RewardsComponent,
     RatificationComponent,
     GigProfileComponent,
-    GigExperienceComponent
+    GigExperienceComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

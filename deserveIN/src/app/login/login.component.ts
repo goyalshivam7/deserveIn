@@ -23,17 +23,17 @@ export class LoginComponent implements OnInit {
   }
 
   onSignInWithGoogle() {
-    this.authService.googleSignIn().then(() => {
+    this.authService.googleSignin().then(() => {
       this.router.navigate(['']);
     }).catch((err) => {
       console.log(err);
     });
   }
-  onLogOut() {
-    this.authService.logout().then(() => {
-      this.router.navigate(['']);
-    });
-  }
+  // onLogOut() {
+  //   this.authService.logout().then(() => {
+  //     this.router.navigate(['']);
+  //   });
+  // }
 }
 
 // nextPage(){

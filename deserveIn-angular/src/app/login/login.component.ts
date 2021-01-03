@@ -29,15 +29,10 @@ export class LoginComponent implements OnInit {
       console.log(err);
     });
   }
-  // onLogOut() {
-  //   this.authService.logout().then(() => {
-  //     this.router.navigate(['']);
-  //   });
-  // }
+  onLogOut() {
+    this.authService.logout().then(() => {
+      this.router.navigate(['']);
+    });
+  }
 }
-
-// nextPage(){
-//     this.router.navigate(['introduction']);
-//   }
-// }
 

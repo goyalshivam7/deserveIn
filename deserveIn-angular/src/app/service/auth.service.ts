@@ -69,7 +69,7 @@ export class AuthService {
     })
   }
 
-  logout() {
+  async logout() {
     this.afAuth.signOut();
   }
 }

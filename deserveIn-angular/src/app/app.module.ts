@@ -23,6 +23,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { AuthService } from "./service/auth.service";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from 'src/environments/environment';
+import { HomeComponent } from './body/home/home.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { environment } from 'src/environments/environment';
     RatificationComponent,
     GigProfileComponent,
     GigExperienceComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

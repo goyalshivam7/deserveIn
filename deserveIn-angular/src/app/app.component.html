@@ -8,12 +8,22 @@
 
 
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: black;">
-  <a class="navbar-brand text-white px-2" style="font-weight: bold;" href="app.component.html">
-      <img src="../assets/logo.png" width="30" height="30" alt="" loading="lazy"> DeserveIn
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-white"></span>
+    <a class="navbar-brand text-white px-2" style="font-weight: bold;" href="app.component.html">
+        <img src="../assets/logo.png" width="30" height="30" alt="" loading="lazy"> DeserveIn
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon text-white"></span>
   </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-3">
+                <button type="button" class="btn btn-primary" *ngIf="!(authService.afAuth.user | async)" (click)="login()">Login</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" *ngIf="(authService.afAuth.user | async)" (click)="logout()">Logout</button>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <router-outlet></router-outlet>

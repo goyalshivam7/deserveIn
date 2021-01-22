@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AttainmentsComponent } from './attainments/attainments.component';
+import { HomeComponent } from './body/home/home.component';
 import { FrameWorksComponent } from './frame-works/frame-works.component';
 import { GigExperienceComponent } from './gig-experience/gig-experience.component';
 import { GigProfileComponent } from './gig-profile/gig-profile.component';
@@ -14,7 +15,8 @@ import { ValidationComponent } from './validation/validation.component';
 import { VerificationComponent } from './verification/verification.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'attainments', component: AttainmentsComponent},
   {path: 'frame-works', component: FrameWorksComponent},
   {path: 'gig-experience', component: GigExperienceComponent},

@@ -1,19 +1,65 @@
 <div class="d-flex py-2 bd-highlight bg-warning mb-5">
     <h3 id="text">Ractification</h3>
 </div>
-<div class="container py-5">
-    <h2>Skills</h2>
 
-    <div class="row pt-5">
-        <div class="col-md-2 col-3">
-            <div class="pt-2 pb-5">
-                <button type="submit" class="btn btn-primary" id="submitIntro">Submit</button>
-            </div>
+<div class="container py-5 ">
+    <div class="bg-light px-5">
+        <div class="row pt-2">
+            <div class="col-md-11 col-10"></div>
+            <span type="button" class="col-md-1 col-2 pt-5 material-icons" id="backToMain">
+                close
+            </span>
         </div>
-        <div class="col-md-8 col-6"></div>
-        <div class="col-md-2 col-3">
-            <div class="px-2">
-                <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="pl-1 fontHeading">Skills</h3>
+                <hr class="w-75 ml-0" />
+            </div>
+            <div class="form-row py-5">
+                <div class="row pt-3">
+                    <h4>Web Development</h4>
+                    <span class="material-icons" style="font-size: 50px;"> check_circle_outline </span>
+                    <h5>Deserveln</h5>
+                </div>
+                <div class="row pt-3">
+
+                    <span class="material-icons" style="font-size: 50px;"> check_circle_outline </span>
+                    <h5>Deserveln</h5>
+                </div>
+                <div class="row pt-3">
+
+                    <span class="material-icons" style="font-size: 50px;"> check_circle_outline </span>
+                    <h5>Deserveln</h5>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-md-4">
+                    <h3 class="pl-1 fontHeading">Advocacies</h3>
+                    <hr class="w-75 ml-0">
+                </div>
+            </div>
+            <div class="row pt-3">
+                <h5>L1 --> Not applicable</h5>
+            </div>
+            <div class="row pt-3">
+                <h5>Java --> L2 --> abc is skillful in Java</h5>
+            </div>
+            <div class="row pt-3">
+                <h5>Java --> L3 --> abc is Highly Recommended in Java</h5>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-2 col-3">
+                    <div class="pt-2 pb-5">
+                        <button type="submit" class="btn btn-primary" id="submitIntro">Prev</button>
+                    </div>
+                </div>
+                <div class="col-md-8 col-6"></div>
+                <div class="col-md-2 col-3">
+                    <div class="pt-2">
+                        <button type="submit" class="btn btn-primary" (click)="nextPage()">Next</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

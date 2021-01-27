@@ -24,6 +24,9 @@ import { AuthService } from "./service/auth.service";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './body/home/home.component';
+import { RegisterationComponent } from './registeration/registeration.component';
+import { MeetStandardComponent } from './meet-standard/meet-standard.component';
+import { EditableComponent } from './ratification/editable/editable.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,9 @@ import { HomeComponent } from './body/home/home.component';
     GigProfileComponent,
     GigExperienceComponent,
     HomeComponent,
+    RegisterationComponent,
+    MeetStandardComponent,
+    EditableComponent,
   ],
   imports: [
     BrowserModule,

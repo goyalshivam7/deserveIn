@@ -1,0 +1,85 @@
+body{
+	background: no-repeat scroll 0 0;
+	font-family: 'Oswald',sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.logo_area{
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	left: 43%;
+	top: 0;
+	content: "";
+}
+section{
+	padding: 0 100px;
+	background:#283747;
+	height: 150px;
+	display: flex;
+	justify-content:center;
+	flex-direction: row-reverse;
+}
+h2{
+	margin: 180px;
+	padding: 0 0 10px;
+	font-size: 73px;
+	color: #283747;
+}
+.box{
+	position: absolute;
+	max-width: 1050px;
+	padding: 60px 250px;
+	margin: 250px;
+	height: 583px;
+	background: rgba(200,200,200,.8);
+	box-shadow: 10px 10px rgba(0,0,0,0.3);
+}
+.main_menu{
+	text-align: center;
+	font-size: 27px;
+	font-family: Arial;
+}
+.btn{
+	position: absolute;
+	top: 138%;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background: blue;
+	border: none;
+	border-radius: 50px;
+	outline: none;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 23px;
+	padding: 13px;
+	width: 130px;
+	height: 40px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.btn span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.btn span: :after{
+	content: '\0021';
+	position: absolute;
+	opacity: 0;
+	top: 0px;
+	right: -20px;
+	transition: 0.5s;
+}
+.btn:hover span{
+	padding-right: 25px;
+}
+.btn:hover span: :after{
+	opacity: 1;
+	right: 0px;
+}

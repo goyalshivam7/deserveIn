@@ -1,0 +1,58 @@
+body{
+	background: no-repeat scroll 0 0;
+	font-family: 'Oswald',sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.logo_area{
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	left: 43%;
+	top: 0;
+	content: "";
+}
+section{
+	padding: 0 100px;
+	background:#283747;
+	height: 150px;
+	display: flex;
+	justify-content:center;
+	flex-direction: row-reverse;
+}
+h2{
+	margin: 180px;
+	padding: 0 0 10px;
+	font-size: 73px;
+	color: #283747;
+}
+.box{
+	position: absolute;
+	max-width: 1050px;
+	padding: 60px 200px;
+	margin: 250px;
+	background: rgba(200,200,200,.8);
+	box-shadow: 10px 10px rgba(0,0,0,0.3);
+}
+.form{
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+}
+.btn{
+	width: 320px;
+	height: 40px;
+	border-radius: 50px;
+	background: blue;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}	
+.btn:hover{
+	background: #283747;
+}
+.log{
+	font-size: 18px;
+	text-align: center;
+}
